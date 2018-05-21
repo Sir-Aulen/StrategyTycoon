@@ -1,12 +1,30 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy Tycoon (name tbd)", "Strategy Tycoon (name tbd).csproj", "{68AF5C49-4711-83CC-F516-3B5E5674EBC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy Tycoon (name tbd).Editor", "Strategy Tycoon (name tbd).Editor.csproj", "{8D0DA497-06E2-01C5-1AD5-86CE9556D7C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy Tycoon (name tbd).Editor", "Strategy Tycoon (name tbd).Editor.csproj", "{8D0DA497-06E2-01C5-1AD5-86CE9556D7C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68AF5C49-4711-83CC-F516-3B5E5674EBC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68AF5C49-4711-83CC-F516-3B5E5674EBC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68AF5C49-4711-83CC-F516-3B5E5674EBC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68AF5C49-4711-83CC-F516-3B5E5674EBC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D0DA497-06E2-01C5-1AD5-86CE9556D7C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D0DA497-06E2-01C5-1AD5-86CE9556D7C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D0DA497-06E2-01C5-1AD5-86CE9556D7C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D0DA497-06E2-01C5-1AD5-86CE9556D7C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D0DA497-06E2-01C5-1AD5-86CE9556D7C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D0DA497-06E2-01C5-1AD5-86CE9556D7C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D0DA497-06E2-01C5-1AD5-86CE9556D7C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D0DA497-06E2-01C5-1AD5-86CE9556D7C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
