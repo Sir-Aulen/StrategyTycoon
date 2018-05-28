@@ -22,8 +22,6 @@ public class FactoryController_start : MonoBehaviour {
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("exited");
-
         if (collision.tag == "Bullet")
         {
             next = true;

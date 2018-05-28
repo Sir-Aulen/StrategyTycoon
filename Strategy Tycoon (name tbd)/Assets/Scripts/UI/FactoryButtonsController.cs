@@ -11,7 +11,7 @@ public class FactoryButtonsController : MonoBehaviour {
 
     private void Update()
     {
-        money.text = "$" + FactoryController_start.money.ToString();
+        money.text = " $" + FactoryController_start.money.ToString();
         value.text = "$" + FactoryController_start.valuePrice.ToString();
         speed.text = "$" + FactoryController_start.speedPrice.ToString();
     }

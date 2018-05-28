@@ -290,7 +290,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Door_Unlocked.cs" />
     <Compile Include="Assets\Scripts\Factory\BulletController.cs" />
     <Compile Include="Assets\Scripts\Factory\FactoryController_end.cs" />
     <Compile Include="Assets\Scripts\Factory\FactoryController_start.cs" />

@@ -5,35 +5,43 @@ using UnityEngine.UI;
 
 public class MenuButtonsController : MonoBehaviour {
 
-    public Text text;
+    public Text title;
+
+    /*public Text shop;
+    public Text factory;
+    public Text armory;
+    public Text map;*/
+
+
+    private int defaultSize;
 
     private void Start()
     {
-        text.text = "";
+        //shop = shop.GetComponent<Text>();
+
+        //defaultSize = factory.GetComponent<Text>().cachedTextGenerator.fontSizeUsedForBestFit;
+
+        //Debug.Log(defaultSize);
     }
 
-    public void shopPressed()
+    private void Update()
     {
-        changeText("shop");
+        /*if (Input.GetKeyDown(KeyCode.Space))
+        {
+            shop.fontSize = defaultSize;
+            factory.fontSize = defaultSize;
+            armory.fontSize = defaultSize;
+            map.fontSize = defaultSize;
+        }*/
     }
 
-    public void factoryPressed()
-    {
-        changeText("factory");
-    }
-
-    public void armoryPressed()
-    {
-        changeText("armory");
-    }
-
-    public void mapPressed()
-    {
-        changeText("map");
-    }
+    public void shopPressed() { changeText("Shop"); }
+    public void factoryPressed() { changeText("Factory");  }
+    public void armoryPressed() { changeText("Armory"); }
+    public void mapPressed(){ changeText("Map"); }
 
     public void changeText(string message)
     {
-        text.text = message;
+        title.text = message;
     }
 }

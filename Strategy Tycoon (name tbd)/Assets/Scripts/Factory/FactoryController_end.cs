@@ -6,10 +6,9 @@ public class FactoryController_end : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Entered");
         if (collision.tag == "Bullet")
         {
-            Destroy(collision);
+            Destroy(collision.gameObject);
             FactoryController_start.money += FactoryController_start.valueLevel;
         }
     }
