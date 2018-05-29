@@ -7,7 +7,7 @@ public class FactoryController_start : MonoBehaviour {
     public GameObject bullet;
     private GameObject start;
 
-    public static int money = 100;
+    public static int bullets = 100;
     public static int speedPrice = 10;
     public static int speedLevel = 1;
     public static int valuePrice = 10;

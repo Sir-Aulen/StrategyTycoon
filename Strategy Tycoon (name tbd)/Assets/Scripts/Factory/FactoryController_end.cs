@@ -9,7 +9,7 @@ public class FactoryController_end : MonoBehaviour {
         if (collision.tag == "Bullet")
         {
             Destroy(collision.gameObject);
-            FactoryController_start.money += FactoryController_start.valueLevel;
+            FactoryController_start.bullets += FactoryController_start.valueLevel;
         }
     }
 }
