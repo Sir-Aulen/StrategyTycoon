@@ -290,9 +290,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Factory\BulletController.cs" />
-    <Compile Include="Assets\Scripts\Factory\FactoryController_end.cs" />
-    <Compile Include="Assets\Scripts\Factory\FactoryController_start.cs" />
+    <Compile Include="Assets\Scripts\2_Factory\BulletController.cs" />
+    <Compile Include="Assets\Scripts\2_Factory\FactoryController_end.cs" />
+    <Compile Include="Assets\Scripts\2_Factory\FactoryController_start.cs" />
+    <Compile Include="Assets\Scripts\3_Armory\ArmoryController.cs" />
+    <Compile Include="Assets\Scripts\3_Armory\GunController.cs" />
+    <Compile Include="Assets\Scripts\UI\ArmoryButtonsController.cs" />
     <Compile Include="Assets\Scripts\UI\FactoryButtonsController.cs" />
     <Compile Include="Assets\Scripts\UI\MenuButtonsController.cs" />
   </ItemGroup>

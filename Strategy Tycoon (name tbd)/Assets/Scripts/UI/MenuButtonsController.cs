@@ -25,6 +25,7 @@ public class MenuButtonsController : MonoBehaviour {
         menuButtons.Add(GameObject.Find("FactoryButtons"));
         menuButtons.Add(GameObject.Find("ArmoryButtons"));
         menuButtons.Add(GameObject.Find("MapButtons"));
+        activate("FactoryButtons");
 
         //Keep font sizes the same
         //shop = shop.GetComponent<Text>();
