@@ -23,7 +23,7 @@ public class FactoryButtonsController : MonoBehaviour {
         if (FactoryController_start.bullets >= FactoryController_start.speedPrice)
         {
             FactoryController_start.bullets -= FactoryController_start.speedPrice;
-            FactoryController_start.speedPrice += 10;
+            if (FactoryController_start.speedPrice >= 50) { FactoryController_start.speedPrice += 50; } else { FactoryController_start.speedPrice += 40; }
             FactoryController_start.speedLevel += 1;
         }
     }

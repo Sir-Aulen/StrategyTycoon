@@ -13,6 +13,6 @@ public class BulletController : MonoBehaviour {
 
     void Update ()
     {
-        rb.velocity = new Vector2((FactoryController_start.speedLevel + 3)/4, 0);
+        rb.velocity = new Vector2(FactoryController_start.speedLevel + 3, 0);
     }
 }
