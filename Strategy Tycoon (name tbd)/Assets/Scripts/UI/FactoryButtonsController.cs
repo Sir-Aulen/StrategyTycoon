@@ -8,33 +8,33 @@ public class FactoryButtonsController : MonoBehaviour {
     public Text speed;
     public Text value;
 
-    public string asciiBullet;
+    //public string asciiBullet;
 
     private void Update()
     {
-        asciiBullet = '\u204D'.ToString(); //⁍
+        //asciiBullet = '\u204D'.ToString(); //⁍
 
-        value.text = FactoryController_start.valuePrice.ToString() + asciiBullet;
-        speed.text = FactoryController_start.speedPrice.ToString() + asciiBullet;
+        value.text = FactoryController_start.valPrice.ToString() + "⁍";
+        speed.text = FactoryController_start.spePrice.ToString() + "⁍";
     }
 
 	public void speedPressed()
     {
-        if (FactoryController_start.bullets >= FactoryController_start.speedPrice)
+        if (FactoryController_start.bullets >= FactoryController_start.spePrice)
         {
-            FactoryController_start.bullets -= FactoryController_start.speedPrice;
-            if (FactoryController_start.speedPrice >= 50) { FactoryController_start.speedPrice += 50; } else { FactoryController_start.speedPrice += 40; }
-            FactoryController_start.speedLevel += 1;
+            FactoryController_start.bullets -= FactoryController_start.spePrice;
+            if (FactoryController_start.spePrice >= 50) { FactoryController_start.spePrice += 50; } else { FactoryController_start.spePrice += 40; }
+            FactoryController_start.speLevel += 1;
         }
     }
 
     public void valuePressed()
     {
-        if (FactoryController_start.bullets >= FactoryController_start.valuePrice)
+        if (FactoryController_start.bullets >= FactoryController_start.valPrice)
         {
-            FactoryController_start.bullets -= FactoryController_start.valuePrice;
-            FactoryController_start.valuePrice += 10;
-            FactoryController_start.valueLevel += 1;
+            FactoryController_start.bullets -= FactoryController_start.valPrice;
+            FactoryController_start.valPrice += 10;
+            FactoryController_start.valLevel += 1;
         }
     }
 }

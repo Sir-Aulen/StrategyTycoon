@@ -5,20 +5,15 @@ using UnityEngine;
 public class FactoryController_start : MonoBehaviour {
 
     public GameObject bullet;
-    private GameObject start;
+    private List<GameObject> lastShot = new List<GameObject>();
 
     public static int bullets = 100;
-    public static int speedPrice = 10;
-    public static int speedLevel = 1;
-    public static int valuePrice = 10;
-    public static int valueLevel = 1;
+    public static int spePrice = 10;
+    public static int speLevel = 1;
+    public static int valPrice = 10;
+    public static int valLevel = 1;
 
     private bool next = true;
-
-    private void Start()
-    {
-        start = GameObject.Find("FactoryStart");
-    }
 
     void OnTriggerExit2D(Collider2D collision)
     {
@@ -32,8 +27,20 @@ public class FactoryController_start : MonoBehaviour {
     {
         if (next)
         {
-            Instantiate(bullet, start.transform.position, start.transform.rotation);
+            lastShot.Add(Instantiate(bullet, transform.position, transform.rotation));
             next = false;
+        }
+
+        for (int i=0; i<lastShot.Count; i++)
+        {
+            if (lastShot[i] == null)
+            {
+                lastShot.RemoveAt(i);
+            }
+            else
+            {
+                lastShot[i].GetComponent<Rigidbody2D>().velocity = new Vector2(FactoryController_start.speLevel, 0);
+            }
         }
     }
 }
