@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class FactoryController_start : MonoBehaviour {
 
+    public bool cheats;
+
     public GameObject bullet;
     private List<GameObject> lastShot = new List<GameObject>();
+    private Transform factoryEnd;
 
     public static int bullets = 100;
     public static int spePrice = 10;
@@ -14,6 +17,11 @@ public class FactoryController_start : MonoBehaviour {
     public static int valLevel = 1;
 
     private bool next = true;
+
+    private void Start()
+    {
+        factoryEnd = GameObject.Find("FactoryEnd").transform;
+    }
 
     void OnTriggerExit2D(Collider2D collision)
     {
@@ -25,6 +33,8 @@ public class FactoryController_start : MonoBehaviour {
 
     private void Update()
     {
+        if (Input.GetKeyDown("q") && cheats) { bullets *= 2; }
+
         if (next)
         {
             lastShot.Add(Instantiate(bullet, transform.position, transform.rotation));
@@ -40,6 +50,12 @@ public class FactoryController_start : MonoBehaviour {
             else
             {
                 lastShot[i].GetComponent<Rigidbody2D>().velocity = new Vector2(FactoryController_start.speLevel, 0);
+                if (lastShot[i].transform.position.x > factoryEnd.position.x)
+                {
+                    Destroy(lastShot[i]);
+                    lastShot.RemoveAt(i);
+                    bullets += valLevel;
+                }
             }
         }
     }

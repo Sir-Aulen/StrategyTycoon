@@ -521,6 +521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5041a2ef14ce22a47b8711773b6b329d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cheats: 0
   bullet: {fileID: 1250875327705860, guid: 2733dde2eab671d438a565ef22f28af2, type: 2}
 --- !u!4 &179473999 stripped
 Transform:
@@ -2228,7 +2229,6 @@ GameObject:
   - component: {fileID: 1227868062}
   - component: {fileID: 1227868063}
   - component: {fileID: 1227868064}
-  - component: {fileID: 1227868065}
   m_Layer: 0
   m_Name: FactoryEnd
   m_TagString: Untagged
@@ -2319,17 +2319,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1227868065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1227868061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bc23b0e5a07eca4d894a9647cb16ee7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1319574277
 GameObject:
   m_ObjectHideFlags: 0
